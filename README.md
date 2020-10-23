@@ -27,3 +27,6 @@ ViewController.swiftのviewDidLoad下に下記コードを追加し、Stagingの
     print("OTHER")
 #endif
 ```
+
+### 参考
+[[Xcode] ビルド環境を切り替えるためにSchemeを追加する](https://dev.classmethod.jp/articles/xcode-build-environment-adding-scheme/)
