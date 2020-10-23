@@ -11,3 +11,19 @@
 - 追加されたコピーに名前（今回はStaging）をつける
 - `Edit Scheme`を選択し、対象のビルドターゲットのBuild ConfigurationをStagingに変更
 
+### Preprocessor Macrosの設定
+- `Targets > Build Settings > PreProcessor Macros`のStagingの項目を`STAGING=1`に変更
+
+### Other Swift Flagsの設定
+- `Targets > Build Settings > Other Siwft Flags`のStagingの項目を`-D STAGING`に変更
+
+### 動作確認
+ViewController.swiftのviewDidLoad下に下記コードを追加し、StagingのスキーマでRunしてコンソールに`STAGING`と表示されることを確認
+
+```
+#if STAGING
+    print("STAGING")
+#else
+    print("OTHER")
+#endif
+```
